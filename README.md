@@ -59,6 +59,8 @@ These scripts are commonly used to perform maintenance tasks (listing, deleting 
 
 To build your batch scripts, I recommend software such as Sublime Text. Just download my script and modify it to your liking.
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.

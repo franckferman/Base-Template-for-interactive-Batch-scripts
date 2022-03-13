@@ -5,7 +5,7 @@ goto check_admin
 
 :check_admin
 net session>nul 2>&1
-if %errorLevel%==0 (goto main) else(
+if %errorLevel%==0 (goto main) else (
 echo Error, you must run this script with Administrator rights.
 )
 pause>nul

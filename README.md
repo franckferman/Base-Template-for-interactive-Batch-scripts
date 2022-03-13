@@ -49,16 +49,12 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![asciicast](https://asciinema.org/a/3Spj6xlfc2E4KgdS4htiJVUfM.svg)](https://asciinema.org/a/3Spj6xlfc2E4KgdS4htiJVUfM)
-
-This repository was created in order to repair the connection problem related to WSL2 (as you can see above).
+This repository was created in order to help beginners, especially those who are new to the world of scripting and especially with regard to Batch.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 ## Getting Started
-
-This repository was created in order to help beginners, especially those who are new to the world of scripting and especially with regard to Batch.
 
 .bat is the extension for an MS-DOS batch file. Creating such a file makes it possible to design scripts which will be interpreted by the command interpreter (cmd.exe). This extension is mainly used on Microsoft operating systems (DOS and Windows). It can be assimilated (to a certain extent) to the .sh extension of Unix shell scripts (those of the Bourne shell more exactly).
 

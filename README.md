@@ -1,6 +1,3 @@
-# interactive-batch-script-template
- A template (for beginners) for creating interactive batch scripts.
-
 <div id="top"></div>
 
 [![Contributors][contributors-shield]](https://github.com/franckferman/interactive-batch-script-template/graphs/contributors)

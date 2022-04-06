@@ -1,19 +1,18 @@
 @echo off
-rem Basic template for interactive Batch scripts.
+rem A template for creating interactive batch scripts.
 
-goto check_admin
-
-:check_admin
 net session>nul 2>&1
-if %errorLevel%==0 (goto main) else (
-echo Error, you must run this script with Administrator rights.
+	if %errorLevel%==0 (goto main) else (
+	color 4
+	echo Administrator rights are required to run this script properly.
+	echo.
+	pause
+	goto quit
 )
-pause>nul
-quit
 
 :main
-title Script name
 cls
+title Interactive Batch script template
 color 0a
 echo ######## ########     ###    ##    ##  ######  ##    ##    
 echo ##       ##     ##   ## ##   ###   ## ##    ## ##   ##     
@@ -21,99 +20,101 @@ echo ##       ##     ##  ##   ##  ####  ## ##       ##  ##
 echo ######   ########  ##     ## ## ## ## ##       #####       
 echo ##       ##   ##   ######### ##  #### ##       ##  ##      
 echo ##       ##    ##  ##     ## ##   ### ##    ## ##   ##     
-echo ##       ##     ## ##     ## ##    ##  ######  ##    ##    
+echo ##       ##     ## ##     ## ##    ##  ######  ##    ##
+echo.
 echo ######## ######## ########  ##     ##    ###    ##    ##   
 echo ##       ##       ##     ## ###   ###   ## ##   ###   ##   
 echo ##       ##       ##     ## #### ####  ##   ##  ####  ##   
 echo ######   ######   ########  ## ### ## ##     ## ## ## ##   
 echo ##       ##       ##   ##   ##     ## ######### ##  ####   
 echo ##       ##       ##    ##  ##     ## ##     ## ##   ###   
-echo ##       ######## ##     ## ##     ## ##     ## ##    ##   
-echo.                                                                                               
-echo We can only see a short distance ahead, but we can see plenty there that needs to be done...
+echo ##       ######## ##     ## ##     ## ##     ## ##    ##
 echo.
 pause
 echo.
-echo Welcome to my script.
+echo Lorem ipsum dolor sit amet. 
 echo.
-echo 1 - Function number one.
-echo 2 - Function number two.
-echo 3 - Function number three.
-echo 4 - Function number four
+echo 1 - First function example: Ping.
+echo 2 - Second function example: FlushDNS.
+echo 3 - Third function example: Show date.
+echo 4 - Fourth function example: Assign a network drive.
 echo.
-echo 9 - Quit the program.
+echo 9 - Leave the program.
 echo.
 
 set userchoice=
-set /p userchoice=Your choice : 
-if %userchoice%==1 goto function1 if NOT goto backtomain
-if %userchoice%==2 goto function2 if NOT goto backtomain
-if %userchoice%==3 goto function3 if NOT goto backtomain
-if %userchoice%==4 goto function4 if NOT goto backtomain
-if %userchoice%==9 goto quit if NOT goto backtomain
+set /p userchoice=Your choice: 
+if %userChoice%==1 goto firstFunction if NOT goto BackTomain
+if %userChoice%==2 goto secondFunction if NOT goto BackTomain
+if %userChoice%==3 goto thirdFunction if NOT goto BackTomain
+if %userChoice%==4 goto fourthFunction if NOT goto BackTomain
+if %userChoice%==9 goto quit if NOT goto BackTomain
 
 :error
 cls
-echo Sorry, an unexpected error was caused.
-echo Do you want to try again or exit the program?
+color 4
+echo An unexpected error was caused.
+echo.
+echo Which choice do you want to make?
 echo.
 echo 1 - Back to main menu.
-echo 2 - Quit the program. 
-set erroruserchoice=
+echo 2 - Quit the program.
 echo.
-set /p erroruserchoice= Please make a choice : 
-if %erroruserchoice%==1 goto backtomain if NOT goto backtomain
-if %erroruserchoice%==2 goto quit if NOT goto backtomain
+set erroruserchoice=
+set /p erroruserchoice= Please make a choice: 
+if %erroruserchoice%==1 goto BackTomain if NOT goto quit
+if %erroruserchoice%==2 goto quit if NOT goto BackTomain
 
-:backtomain
+:BackTomain
 goto main
 
 :quit
-color F
 cls
+color 7
 exit /b
 
-:function1
+:firstFunction
 cls
-set ipaddr=
-set /p ipaddr= Please enter the IP address of a machine or a site (for example, 192.168.0.1 or www.site.com) : 
-ipaddr -4 -n 3 %ipaddr%
+color 7
+set ipAddr=
+set /p ipAddr=Enter the IP address of a machine, the name of a machine or a website (for example 192.168.0.1 or github.com): 
+ping -4 -n 4 %ipAddr%
 echo.
 pause
 cls
-goto backtomain
+goto BackTomain
 
-:function2
+:secondFunction
 cls
+color 7
+echo Start the DNS flushing process.
 timeout /t 5
-echo.
-echo Flushing DNS cache, please wait...
-timeout /t 10
-echo.
 ipconfig /flushdns 
-echo.
 timeout /t 5
 echo.
-echo ...
-timeout /t 5
-echo.
-echo ...
-timeout /t 5
-echo.
-echo Success.
+echo DNS flushing process successfully completed.
 echo.
 pause
-cls
-goto backtomain
+goto BackTomain
 
-:function3
+:thirdFunction
 cls
-nslookup myip.opendns.com resolver1.opendns.com
+color 7
+echo We are on %date%, and it is%time%.
+echo.
 pause
-goto backtomain
+goto BackTomain
 
-:function4
+:fourthFunction
 cls
+color 7
+
+set NetworkDrive=
+set /p NetworkDrive=What letter do you want to use for the network drive (for example x, y or z...): 
+
+net use %NetworkDrive%: /delete
+net use %NetworkDrive%: \\ip\folder /user:username password /p:yes
+rem /p:yes=reconnection at startup
+
 pause
-cls
-goto backtomain
+goto BackTomain

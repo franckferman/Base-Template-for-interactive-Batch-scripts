@@ -16,7 +16,7 @@
 <h3 align="center">interactive-batch-script-template</h3>
 
   <p align="center">
-     A template (for beginners) for creating interactive batch scripts.
+     A template for creating interactive batch scripts.
     <br />
     <a href="https://github.com/franckferman/interactive-batch-script-template"><strong>Explore the docs »</strong></a>
     <br />
@@ -46,18 +46,25 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This repository was created in order to help beginners, especially those who are new to the world of scripting and especially with regard to Batch.
+This script is simply a basic interactive template to help create Batch scripts. By interactivity, I mean more precisely a "multiple choice script", which returns to function x, depending on the user's choice y.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Getting Started and Usage
 
-.bat is the extension for an MS-DOS batch file. Creating such a file makes it possible to design scripts which will be interpreted by the command interpreter (cmd.exe). This extension is mainly used on Microsoft operating systems (DOS and Windows). It can be assimilated (to a certain extent) to the .sh extension of Unix shell scripts (those of the Bourne shell more exactly).
+.bat is the extension for an MS-DOS batch file. Creating such a file makes it possible to design scripts which will be interpreted by the command interpreter (cmd.exe). 
+
+This extension is mainly used on Microsoft operating systems (DOS and Windows). It can be assimilated (to a certain extent) to the .sh extension of Unix shell scripts (those of the Bourne shell more exactly).
 
 These scripts are commonly used to perform maintenance tasks (listing, deleting files, etc.) on one or more workstations, for example from a server administering a network.
 
 To build your batch scripts, I recommend software such as Sublime Text. Just download my script and modify it to your liking.
+
+* To simply download my script from your command prompt, enter the following command:
+```sh
+curl --output interactive-batch-script-template.bat --url https://raw.githubusercontent.com/franckferman/interactive-batch-script-template/main/interactive-batch-script-template.bat
+```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

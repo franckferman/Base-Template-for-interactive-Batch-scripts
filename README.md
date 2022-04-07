@@ -48,7 +48,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![youtube](https://img.youtube.com/vi/dt-ed21KBzU/0.jpg)](https://youtu.be/dt-ed21KBzU "test")
+[![youtube](https://img.youtube.com/vi/dt-ed21KBzU/0.jpg)](https://youtu.be/dt-ed21KBzU)
 
 This script is simply a basic interactive template to help create Batch scripts. By interactivity, I mean more precisely a "multiple choice script", which returns to function x, depending on the user's choice y.
 

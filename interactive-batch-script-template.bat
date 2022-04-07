@@ -100,7 +100,7 @@ goto BackTomain
 :thirdFunction
 cls
 color 7
-echo We are on %date%, and it is%time%.
+echo We are on %date%, and it is %time%.
 echo.
 pause
 goto BackTomain

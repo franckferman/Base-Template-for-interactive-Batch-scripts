@@ -21,6 +21,8 @@
     <a href="https://github.com/franckferman/interactive-batch-script-template"><strong>Explore the docs »</strong></a>
     <br />
     <br />
+    <a href="https://youtu.be/dt-ed21KBzU">View Demo</a>
+    ·
     <a href="https://github.com/franckferman/interactive-batch-script-template/issues">Report Bug</a>
     ·
     <a href="https://github.com/franckferman/interactive-batch-script-template/issues">Request Feature</a>
@@ -45,6 +47,8 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+
+[![youtube](https://img.youtube.com/vi/dt-ed21KBzU/0.jpg)](https://youtu.be/dt-ed21KBzU)
 
 This script is simply a basic interactive template to help create Batch scripts. By interactivity, I mean more precisely a "multiple choice script", which returns to function x, depending on the user's choice y.
 

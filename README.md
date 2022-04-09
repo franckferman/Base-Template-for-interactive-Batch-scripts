@@ -51,7 +51,7 @@
 <br />
 <div align="center">
   <a href="#">
-    <img src="https://raw.githubusercontent.com/franckferman/interactive-batch-script-template/main/img/interactive-batch-script-template-Main_Picture.png" alt="Hyper-V_Toolbox-Main_Picture" width="400" height="400">
+    <img src="https://raw.githubusercontent.com/franckferman/interactive-batch-script-template/main/img/interactive-batch-script-template-Main_Picture.png" alt="Hyper-V_Toolbox-Main_Picture" width="400" height="420">
   </a>
 </div><br /><br />
 

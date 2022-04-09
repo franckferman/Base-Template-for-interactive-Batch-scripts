@@ -48,6 +48,13 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+<br />
+<div align="center">
+  <a href="#">
+    <img src="https://raw.githubusercontent.com/franckferman/hyper-v_toolbox/main/img/interactive-batch-script-template-Main_Picture.png" alt="Hyper-V_Toolbox-Main_Picture" width="800" height="450">
+  </a>
+</div><br /><br />
+
 This script is simply a basic interactive template to help create Batch scripts. By interactivity, I mean more precisely a "multiple choice script", which returns to function x, depending on the user's choice y.
 
 <p align="right">(<a href="#top">back to top</a>)</p>

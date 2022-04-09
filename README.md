@@ -18,7 +18,7 @@
   <p align="center">
      A template for creating interactive batch scripts.
     <br />
-    <a href="https://github.com/franckferman/interactive-batch-script-template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/franckferman/interactive-batch-script-template/blob/main/README.md"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://youtu.be/dt-ed21KBzU">View Demo</a>
